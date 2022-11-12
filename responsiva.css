@@ -72,7 +72,7 @@ p{
 }
 
 .footer a{
-    color: rgb(66, 66, 66);
+    color: rgb(88, 88, 88);
 }
 
 .footer a:hover{
@@ -156,7 +156,7 @@ nav.menuDesplegable{
 
 /* Estilo del boton cuando se pasa el mouse por encima*/
 .menuDesplegable label:hover{
-    background-color: darkgrey;
+    background-color: rgb(88, 88, 88);
 }
 
 /* Estilo del boton cuando el menú está expandido*/
@@ -177,7 +177,7 @@ nav.menuDesplegable{
     margin: 0;
     padding: 1vw;
     list-style: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(88, 88, 88);
 }
 
 .menuDesplegable li a{
