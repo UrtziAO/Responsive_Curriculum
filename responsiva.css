@@ -1,0 +1,222 @@
+/*REGLAS CSS COMUNES*/
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+.container{
+    width: 100%;
+}
+
+
+/* ---------------HEADER------------ */
+
+.header{
+    display: flex;
+    background-image: url("images/header big.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 15vw;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.header h2{
+    font-size: 5vw;
+    margin-top: 0vw;
+    padding-top: 2.5vw;
+    padding-left: 2vw;
+}
+
+.header h4{
+    font-size: 3vw;
+    margin-top: 9.5vw;
+    margin-left: -21vw;
+    font-style: italic;
+}
+
+.body{
+    width: 100%;
+}
+
+.contenido ul{
+    padding-left: 5vw;
+}
+
+
+/* ---------------FOOTER------------ */
+
+.footer{
+    width: 100%;
+    height: 10vw;
+    background-color: lightgray;
+    border-radius: 2vw;
+}
+
+.footer i{
+    font-size: 3vw;
+    padding-left: 3vw;
+    padding-top: 1vw;
+}
+
+.footer p{
+    padding-left: 3vw;
+    margin-top: 1vw;
+}
+
+.footer a{
+    color: rgb(66, 66, 66);
+}
+
+.footer a:hover{
+    color: black;
+    
+}
+
+
+/* ---------------MENÚ HORIZONTAL------------ */
+
+.menuHorizontal ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.menuHorizontal li{
+    display: inline-flex;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.menuHorizontal li a{
+    font-size: 2vw;
+    padding: 1vw;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+.menuHorizontal li a:hover{
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.menuHorizontal{
+    background-color: lightgray;
+    height: 3.5vw;
+    border-radius: 0vw 0vw 1vw 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------MENÚ DESPLEGABLE------------    https://codepen.io/tognola/pen/JjGVZPo */
+
+nav.menuDesplegable{
+    position: absolute;
+    right: 15vw;
+    top: 5vw;
+}
+
+.menuDesplegable ul{
+    display: none;
+}
+
+.menuDesplegable input:checked  ~ ul{
+    display:block;
+}
+
+.menuDesplegable input {
+    display: none;
+}
+
+.menuDesplegable label {
+    font-size: 9vw;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 1vw;
+    width: 8vw;
+    height: 8vw;
+    line-height: 5vw;
+    font-weight: bold;
+    user-select: none;
+    justify-content: center;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+.menuDesplegable label:hover{
+    background-color: darkgrey;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+.menuDesplegable input:checked ~ label {
+    background: lightgrey; 
+    margin-left: 17vw;
+}
+
+.menuDesplegable ul{
+    margin-top:0;
+    padding: 0;
+    width: 25vw;
+}
+
+.menuDesplegable li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 1vw;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+.menuDesplegable li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+.menuDesplegable li:hover {
+    filter: brightness(110%);
+}
+
+.menuDesplegable li a:hover{
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* ---------------PANTALLAS PEQUEÑAS------------ */
+
+@media screen and (max-width: 576px){
+
+    html{
+        font-size: 2.5vw;
+    }
+
+    nav.menuHorizontal {
+        visibility: hidden;
+    }
+
+    .header{
+        border-radius: 3vw;
+    }
+}
+
+
+/* ---------------RESTO DE PANTALLAS------------ */
+
+@media screen and (min-width: 577px){
+
+    .menuDesplegable{
+        visibility: hidden;
+    }
+}
