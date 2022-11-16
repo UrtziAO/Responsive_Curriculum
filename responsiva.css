@@ -42,6 +42,10 @@ p{
     width: 100%;
 }
 
+.contenido{
+    width: 80%;
+    margin: auto;
+}
 .contenido ul{
     padding-left: 5vw;
 }
@@ -212,6 +216,10 @@ nav.menuDesplegable{
 
     .header{
         border-radius: 3vw;
+    }
+
+    .contenido{
+        width: 100%;
     }
 }
 
